@@ -22,7 +22,7 @@ export default class AppContainer extends Component {
     this.next = this.next.bind(this);
     this.prev = this.prev.bind(this);
     this.selectAlbum = this.selectAlbum.bind(this);
-    this.deselectAlbum = this.deselectAlbum.bind(this);
+    // this.deselectAlbum = this.deselectAlbum.bind(this);
   }
 
   componentDidMount () {
@@ -98,9 +98,9 @@ export default class AppContainer extends Component {
       }));
   }
 
-  deselectAlbum () {
-    this.setState({ selectedAlbum: {}});
-  }
+  // deselectAlbum () {
+  //   this.setState({ selectedAlbum: {}});
+  // }
 
   render () {
     return (

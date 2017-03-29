@@ -19,7 +19,7 @@ const Songs = (props) => {
       </thead>
       <tbody>
         {
-          songs && songs.map(song => (
+          songs.length && songs.map(song => (
             <tr key={song.id}>
               <td>
                 <button className="btn btn-default btn-xs" onClick={() => toggle(song, songs)}>
